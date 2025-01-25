@@ -207,9 +207,6 @@ body{
     padding: 5px 15px;
     border-bottom: 1px solid var(--bg3);
 }
-.side .nav li a.active{
-    color: var(--skin1);
-}
 .side .nav li a i{
     margin-left: 15px;
 }
@@ -370,8 +367,8 @@ h3.my-profession .typing{
 }
 .about .about-content .education,
 .about .about-content .experience{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 100%;
+    max-width: 100%;
     margin-top: 30px;
 }
 .about .about-content h3.title{
@@ -477,6 +474,9 @@ h3.my-profession .typing{
     text-align: center;
 }
 /* Contact */
+.contact.section{
+    min-height: 300px;
+}
 .contact-title{
     color: var(--text1);
     text-align: center;
@@ -513,42 +513,9 @@ h3.my-profession .typing{
     font-weight: 400;
     margin-bottom: 60px;
 }
-.contact .contact-form{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.contact .contact-form .col-12{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.contact .contact-form .col-6{
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.contact .contact-form .form-item{
-    margin-bottom: 30px;
-}
-.contact .contact-form .form-item .form-control{
-    width: 100%;
-    height: 50px;
-    border-radius: 50px;
-    background: var(--bg2);
-    border: 2px solid var(--bg3);
-    padding: 10px 20px;
-    font-size: 16px;
-    color: var(--text1);
-    transition: all 0.3s ease;
-}
-.contact .contact-form .form-item .form-control:focus{
-    box-shadow: 0 0 20px rgba(48,46,77,0.15);
-}
-.contact .contact-form .form-item textarea.form-control{
-    height: 140px;
-    padding: 30px;
-}
-.contact .contact-form .form-item .btn{
-    height: 50px;
-    padding: 0px 50px;
+.contact a{
+    color: var(--skin1);
+    font-weight: bold;
 }
 
 @media(max-width: 1199px){
